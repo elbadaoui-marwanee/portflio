@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self'; connect-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; form-action 'self'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <script src="cv.js" defer></script>
+  <title>CV — Marwane El Badaoui</title>
+  <style>
+    :root { --ink:#1c1b24; --muted:#656171; --accent:#6547e8; --soft:#f1edff; --line:#e6e2ed; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:#ecebf1; color:var(--ink); font:13px/1.52 Arial, sans-serif; }
+    .toolbar { position:sticky; top:0; display:flex; justify-content:center; gap:10px; padding:12px; background:#171620; }
+    .toolbar a,.toolbar button { padding:10px 15px; border:0; border-radius:8px; background:var(--accent); color:#fff; font-weight:700; text-decoration:none; cursor:pointer; }
+    .toolbar a { background:#34313f; }
+    .page { width:210mm; min-height:297mm; margin:20px auto; padding:18mm; background:#fff; box-shadow:0 20px 60px rgba(20,15,40,.15); }
+    header { display:flex; align-items:flex-end; justify-content:space-between; gap:30px; padding-bottom:19px; border-bottom:2px solid var(--ink); }
+    h1,h2,h3,p { margin:0; }
+    h1 { font-size:34px; line-height:1; letter-spacing:-1.4px; }
+    .role { margin-top:8px; color:var(--accent); font-size:15px; font-weight:700; }
+    .contact { color:var(--muted); font-size:11px; text-align:right; }
+    .contact span { display:block; }
+    .layout { display:grid; grid-template-columns:1.8fr 1fr; gap:30px; margin-top:25px; }
+    section + section { margin-top:24px; }
+    h2 { margin-bottom:11px; color:var(--accent); font-size:11px; letter-spacing:1.5px; text-transform:uppercase; }
+    h3 { font-size:14px; }
+    .intro { color:var(--muted); }
+    .item { padding-left:13px; border-left:2px solid var(--line); }
+    .item + .item { margin-top:15px; }
+    .item small { display:block; margin-bottom:3px; color:var(--accent); font-size:9px; font-weight:700; text-transform:uppercase; }
+    .item p { margin-top:5px; color:var(--muted); font-size:11px; }
+    ul { display:flex; flex-wrap:wrap; gap:6px; padding:0; margin:0; list-style:none; }
+    li { padding:5px 8px; border-radius:7px; background:var(--soft); color:#49359b; font-size:10px; font-weight:700; }
+    .aside-block { padding:15px; border-radius:10px; background:#f7f6fa; }
+    .aside-block + .aside-block { margin-top:12px; }
+    .aside-block p { color:var(--muted); font-size:11px; }
+    @page { size:A4; margin:0; }
+    @media print { body { background:#fff; } .toolbar { display:none; } .page { margin:0; box-shadow:none; } }
+    @media (max-width:850px) { .page { width:100%; min-height:auto; margin:0; padding:28px 20px; } .layout { grid-template-columns:1fr; } header { align-items:flex-start; flex-direction:column; } .contact { text-align:left; } }
+  </style>
+</head>
+<body>
+  <div class="toolbar"><a href="index.html">← Portfolio</a><button id="cv-print" type="button">Télécharger / imprimer en PDF</button></div>
+  <main class="page">
+    <header><div><h1>Marwane El Badaoui</h1><p class="role">Étudiant en systèmes et sécurité des réseaux</p></div><div class="contact"><span>Safi, Maroc</span><span>elbadaouimarwanee@gmail.com</span><span>linkedin.com/in/marwane-el-badaoui-5878ab3b2</span></div></header>
+    <div class="layout">
+      <div>
+        <section><h2>Profil</h2><p class="intro">Étudiant à l’École Supérieure de Technologie de Safi, je souhaite cette année approfondir mes compétences en systèmes et en sécurité des réseaux. Mon objectif est de maîtriser l’administration et la protection des infrastructures informatiques à travers des projets concrets.</p></section>
+        <section><h2>Expérience & projets</h2>
+          <article class="item"><small>1er au 31 août 2026 · Stage</small><h3>AGRI ABED — Boutique agricole</h3><p>Développement d’une plateforme PHP/MySQL avec catalogue, panier, commandes, espace client, administration, suivi des stocks et assistant produit.</p></article>
+          <article class="item"><small>7 juin 2026 · Projet académique</small><h3>Exam Planner</h3><p>Application de gestion des examens et des modules avec tableau de bord, planification des révisions et export PDF.</p></article>
+          <article class="item"><small>11 juin 2026 · Projet pratique</small><h3>Laboratoire réseau CCNA</h3><p>Adressage IPv4/IPv6, commutation Ethernet, configuration Cisco IOS et diagnostic de connectivité.</p></article>
+        </section>
+        <section><h2>Formation</h2><article class="item"><small>1er octobre 2025</small><h3>École Supérieure de Technologie de Safi</h3><p>Développement informatique, programmation, bases de données, modélisation et réseaux.</p></article><article class="item"><small>2024–2025</small><h3>Baccalauréat en sciences physiques</h3><p>Option français · Mention Bien.</p></article></section>
+      </div>
+      <aside>
+        <section class="aside-block"><h2>Développement</h2><ul><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>PHP</li><li>Python</li><li>C</li></ul></section>
+        <section class="aside-block"><h2>Données</h2><ul><li>MySQL</li><li>phpMyAdmin</li><li>Merise</li><li>PowerAMC</li><li>SGBD</li></ul></section>
+        <section class="aside-block"><h2>Réseaux</h2><ul><li>IPv4/IPv6</li><li>Subnetting</li><li>Ethernet</li><li>Switching</li><li>Cisco IOS</li></ul></section>
+        <section class="aside-block"><h2>Badge Cisco</h2><h3>CCNA: Introduction to Networks</h3><p>Cisco Networking Academy — badge vérifiable sur Credly.</p></section>
+        <section class="aside-block"><h2>Qualités</h2><p>Curieux · Méthodique · Autonome · Esprit d’équipe · Orienté solutions</p></section>
+      </aside>
+    </div>
+  </main>
+</body>
+</html>

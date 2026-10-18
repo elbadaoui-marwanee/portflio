@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1050" role="img" aria-labelledby="title desc">
+  <title id="title">Laboratoire réseau CCNA</title>
+  <desc id="desc">Schéma de réseau local avec routeur, commutateur, serveur et postes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0c1020"/><stop offset="1" stop-color="#18234a"/></linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#20294a"/><stop offset="1" stop-color="#131a34"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#000" flood-opacity=".3"/></filter>
+  </defs>
+  <rect width="1440" height="1050" fill="url(#bg)"/>
+  <g opacity=".12" stroke="#9bb8ff"><path d="M0 105h1440M0 210h1440M0 315h1440M0 420h1440M0 525h1440M0 630h1440M0 735h1440M0 840h1440M0 945h1440"/><path d="M144 0v1050M288 0v1050M432 0v1050M576 0v1050M720 0v1050M864 0v1050M1008 0v1050M1152 0v1050M1296 0v1050"/></g>
+  <text x="90" y="105" fill="#a9bcff" font-family="Arial, sans-serif" font-size="23" font-weight="700" letter-spacing="5">NETWORK LAB / CCNA</text>
+  <text x="90" y="157" fill="#fff" font-family="Arial, sans-serif" font-size="42" font-weight="700">Infrastructure locale sécurisée</text>
+  <g fill="none" stroke="#6d8cff" stroke-width="7" stroke-linecap="round"><path d="M720 354V467M720 580V685M720 580L343 685M720 580l377 105"/><path d="M343 795v55M720 795v55M1097 795v55"/></g>
+  <g filter="url(#shadow)">
+    <g transform="translate(570 243)"><rect width="300" height="120" rx="24" fill="url(#card)" stroke="#718cff" stroke-width="3"/><circle cx="66" cy="60" r="31" fill="#617eff"/><path d="M50 60h32M66 44v32" stroke="#fff" stroke-width="6" stroke-linecap="round"/><text x="116" y="53" fill="#fff" font-family="Arial" font-size="22" font-weight="700">ROUTER</text><text x="116" y="81" fill="#9aa9d4" font-family="Arial" font-size="16">192.168.1.1</text></g>
+    <g transform="translate(570 466)"><rect width="300" height="120" rx="24" fill="url(#card)" stroke="#718cff" stroke-width="3"/><rect x="39" y="36" width="58" height="47" rx="8" fill="#617eff"/><g fill="#fff"><circle cx="51" cy="71" r="4"/><circle cx="64" cy="71" r="4"/><circle cx="77" cy="71" r="4"/><circle cx="90" cy="71" r="4"/></g><text x="116" y="53" fill="#fff" font-family="Arial" font-size="22" font-weight="700">SWITCH</text><text x="116" y="81" fill="#9aa9d4" font-family="Arial" font-size="16">VLAN / Ethernet</text></g>
+    <g transform="translate(205 684)"><rect width="276" height="120" rx="24" fill="url(#card)" stroke="#55c996" stroke-width="3"/><rect x="36" y="31" width="70" height="49" rx="7" fill="#3aaa79"/><path d="M49 91h44M71 80v11" stroke="#fff" stroke-width="5" stroke-linecap="round"/><text x="128" y="53" fill="#fff" font-family="Arial" font-size="22" font-weight="700">CLIENT A</text><text x="128" y="81" fill="#9aa9d4" font-family="Arial" font-size="16">192.168.1.10</text></g>
+    <g transform="translate(582 684)"><rect width="276" height="120" rx="24" fill="url(#card)" stroke="#55c996" stroke-width="3"/><rect x="36" y="31" width="70" height="49" rx="7" fill="#3aaa79"/><path d="M49 91h44M71 80v11" stroke="#fff" stroke-width="5" stroke-linecap="round"/><text x="128" y="53" fill="#fff" font-family="Arial" font-size="22" font-weight="700">CLIENT B</text><text x="128" y="81" fill="#9aa9d4" font-family="Arial" font-size="16">192.168.1.20</text></g>
+    <g transform="translate(959 684)"><rect width="276" height="120" rx="24" fill="url(#card)" stroke="#ffbd66" stroke-width="3"/><rect x="43" y="26" width="57" height="67" rx="8" fill="#d99642"/><circle cx="71" cy="76" r="5" fill="#fff"/><text x="128" y="53" fill="#fff" font-family="Arial" font-size="22" font-weight="700">SERVEUR</text><text x="128" y="81" fill="#9aa9d4" font-family="Arial" font-size="16">192.168.1.100</text></g>
+  </g>
+  <g font-family="Arial" font-size="17" fill="#a9b6db"><text x="281" y="895">PING ✓</text><text x="660" y="895">IPv4 / IPv6</text><text x="1048" y="895">SERVICES IP</text></g>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 820" role="img" aria-labelledby="title desc">
+  <title id="title">Emplacement pour une photo professionnelle</title>
+  <desc id="desc">Illustration abstraite avec les initiales MEB, à remplacer par une photographie.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#171727"/>
+      <stop offset="1" stop-color="#34305a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".7" cy=".18" r=".72">
+      <stop offset="0" stop-color="#9b83ff" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#6c4cff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="720" height="820" rx="36" fill="url(#bg)"/>
+  <rect width="720" height="820" rx="36" fill="url(#glow)"/>
+  <g opacity=".16" stroke="#fff">
+    <path d="M0 136h720M0 272h720M0 408h720M0 544h720M0 680h720"/>
+    <path d="M120 0v820M240 0v820M360 0v820M480 0v820M600 0v820"/>
+  </g>
+  <circle cx="360" cy="340" r="142" fill="#fff" opacity=".06"/>
+  <circle cx="360" cy="300" r="82" fill="#c8bfff" opacity=".24"/>
+  <path d="M174 659c18-138 86-215 186-215s168 77 186 215" fill="#c8bfff" opacity=".18"/>
+  <text x="360" y="362" fill="#fff" font-family="Arial, sans-serif" font-size="86" font-weight="700" text-anchor="middle">MEB</text>
+  <g transform="translate(202 712)">
+    <rect width="316" height="50" rx="25" fill="#0d0d17" opacity=".72"/>
+    <circle cx="27" cy="25" r="6" fill="#9b83ff"/>
+    <text x="48" y="31" fill="#ded8ff" font-family="Arial, sans-serif" font-size="16">Remplacez par votre photo</text>
+  </g>
+</svg>
