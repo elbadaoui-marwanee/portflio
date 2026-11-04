@@ -9,7 +9,40 @@ Portfolio personnel de **Marwane El Badaoui**, étudiant à l’École Supérieu
 - **E-mail :** [elbadaouimarwanee@gmail.com](mailto:elbadaouimarwanee@gmail.com)
 - **LinkedIn :** [marwane-el-badaoui-5878ab3b2](https://www.linkedin.com/in/marwane-el-badaoui-5878ab3b2)
 - **CV :** [télécharger le PDF](assets/CV-Marwane-El-Badaoui.pdf)
-- **GitHub :** adresse à renseigner dans `portfolio-data.js` (valeur actuelle : `[GITHUB]`)
+- **GitHub :** renseigner l’adresse et le nom du compte dans `portfolio-data.js` avant la publication (valeur actuelle : `[GITHUB]`)
+
+## Publier sur GitHub Pages
+
+Le site est préparé pour GitHub Pages, qui héberge des fichiers statiques. Le workflow `.github/workflows/deploy-pages.yml` construit automatiquement le site et le publie après chaque push sur `main` ou `master`. Il ne copie que les pages HTML, les fichiers CSS/JavaScript et les ressources nécessaires : les scripts PHP et les données de commandes ne sont pas publiés.
+
+1. Personnalisez les coordonnées dans `portfolio-data.js`, notamment `profile.github` et `profile.githubLabel`.
+2. Ajoutez ces fichiers à un dépôt GitHub et poussez-les sur `main` ou `master`.
+3. Dans le dépôt, ouvrez **Settings → Pages** et choisissez **GitHub Actions** comme source de publication.
+4. Consultez l’onglet **Actions** pour vérifier le déploiement, puis ouvrez l’URL affichée dans **Settings → Pages**.
+
+Le formulaire de contact ouvre l’application de messagerie du visiteur ; il ne transmet pas les messages à un serveur. Les pages PHP `commande.php` et `suivi-commandes.php` ne fonctionnent pas sur GitHub Pages. Pour traiter des commandes en ligne, il faut héberger ces scripts sur un serveur compatible PHP et les connecter à un service adapté.
+
+## Voir combien de personnes visitent le portfolio
+
+Le suivi est prêt pour **GitHub Pages**, avec [GoatCounter](https://www.goatcounter.com/). Aucun serveur PHP, mot de passe ou jeton API n’est nécessaire dans le dépôt. Les statistiques commencent après activation ; les anciennes visites ne sont pas récupérables.
+
+1. Créez votre compte sur [goatcounter.com/signup](https://www.goatcounter.com/signup). Choisissez un **Account name**, par exemple `marwane-portfolio` s’il est disponible. Le champ **Site domain** peut contenir votre URL GitHub Pages ; il est facultatif.
+2. Dans `analytics-config.js`, remplacez la chaîne vide par **votre vrai Account name** :
+
+   ```js
+   window.PORTFOLIO_ANALYTICS = {
+     goatcounterCode: 'marwane-portfolio'
+   };
+   ```
+
+3. Poussez les modifications sur GitHub et attendez la fin du déploiement Pages.
+4. Ouvrez votre site publié, puis connectez-vous à `https://VOTRE-ACCOUNT-NAME.goatcounter.com` pour consulter les visites par période, pages, pays et sources. Gardez le tableau de bord privé dans les réglages de GoatCounter.
+
+Un raccourci **Mes statistiques** apparaît en bas du portfolio en ajoutant `?admin=1` à son URL (exemple : `https://votre-compte.github.io/portfolio/?admin=1`). Ce paramètre affiche uniquement le lien ; l’accès aux données dépend de la connexion à votre compte GoatCounter. Cette vue et les aperçus `localhost` ne sont pas comptés.
+
+Les deux pages `index.html` et `cv.html` sont suivies. Les clics de téléchargement du PDF et d’impression du CV apparaissent comme événements. `/portfolio/` et `/portfolio/index.html` sont regroupés ; les paramètres de l’URL sont exclus. Un compte non renseigné laisse le suivi désactivé sans requête externe.
+
+Le nombre de visiteurs est une estimation : les bloqueurs, JavaScript désactivé et le filtrage des robots peuvent réduire le total. GoatCounter distingue les visites des rechargements d’une même page ; voir [Sessions and visitors](https://www.goatcounter.com/help/sessions). Pour vérifier l’installation, utilisez le site publié avec le bloqueur désactivé et attendez quelques secondes ([guide officiel](https://www.goatcounter.com/help/start)).
 
 ## Projets présentés
 
@@ -43,9 +76,10 @@ La page d’accueil regroupe les cours d’algorithmique, de programmation, d’
 
 - `index.html` : page du portfolio (accueil, à propos, projets, modules en cours, compétences, parcours et contact).
 - `portfolio-data.js` : informations du profil et détails des projets à personnaliser.
-- `script.js` et `styles.css` : interactions, cube 3D animé agrandi, thème noir et vert, orbites en perspective et inclinaison des cartes projets au pointeur.
+- `script.js` et `styles.css` : interactions et styles du portfolio.
+- `analytics-config.js` et `analytics.js` : configuration et suivi des visites avec GoatCounter.
 - `cv.html` et `assets/CV-Marwane-El-Badaoui.pdf` : versions du CV.
 - `assets/` : portrait et visuels des projets.
-- `site-hosting/dist/` : copie des fichiers destinés à l’hébergement.
+- `.github/workflows/deploy-pages.yml` : préparation et déploiement du site statique sur GitHub Pages.
 
-Le formulaire de contact prépare un e-mail dans l’application de messagerie du visiteur ; l’envoi se fait depuis cette application. Les liens de démonstration locale des projets apparaissent uniquement sur `localhost`. Pour consulter le site avec XAMPP, ouvrir `http://localhost/portfolio/` après avoir démarré Apache.
+Les liens de démonstration locale des projets apparaissent uniquement sur `localhost`. Pour consulter le site avec XAMPP, ouvrir `http://localhost/portfolio/` après avoir démarré Apache.
